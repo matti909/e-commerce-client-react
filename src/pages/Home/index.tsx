@@ -15,7 +15,7 @@ import { Header } from "../../components";
 import { Products } from "../../services/Products";
 import axios from "axios";
 import { Product } from "../../types/api.types";
-import { CardComponent } from "../../components/Card";
+import  {CardComponent} from "../../components/Card";
 //import { CardComponent } from "../../components/Card";
 
 // eslint-disable-next-line react-hooks/rules-of-hooks

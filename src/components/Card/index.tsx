@@ -12,7 +12,7 @@ import { useAppDispatch, useAppSelector } from "../../redux/hook";
 import { addToCart } from "../../redux/slices/cart.slice";
 import { setItems } from "../../utils/localStorage";
 
- const CardComponent: React.FC<Product> = ({
+export const CardComponent: React.FC<Product> = ({
   id,
   name,
   image,
@@ -68,4 +68,3 @@ import { setItems } from "../../utils/localStorage";
   );
 };
 
-export default CardComponent
