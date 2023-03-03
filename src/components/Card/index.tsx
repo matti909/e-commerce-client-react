@@ -45,7 +45,7 @@ import { setItems } from "../../utils/localStorage";
       <CardMedia
         component="img"
         height="200"
-        image={`http://localhost:1337${image}`}
+        image={`${process.env.REACT_APP_UPLOAD_URL}${image}`}
         alt="n/n"
       />
       <CardContent>
