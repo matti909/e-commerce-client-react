@@ -31,7 +31,7 @@ export const Header: React.FC<HeaderProps> = ({
               sx={{ height: "100%" }}
             >
               <Grid item>
-                <Typography variant="h2">{title}</Typography>
+                <Typography color="black" variant="h2">{title}</Typography>
               </Grid>
               <Grid item sx={{ mt: 2 }}>
                 <Typography>{description}</Typography>

@@ -15,7 +15,8 @@ import { Header } from "../../components";
 import { Products } from "../../services/Products";
 import axios from "axios";
 import { Product } from "../../types/api.types";
-import  {CardComponent} from "../../components/Card";
+import { CardComponent } from "../../components/Card";
+import HorizontalCardComponent from "../../components/HorizontalCard";
 //import { CardComponent } from "../../components/Card";
 
 // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -48,22 +49,17 @@ export const Home: React.FC<{}> = () => {
   return (
     <Container maxWidth="xl">
       <Header
-        title="hola mundo"
-        description="Bienvenido"
-        element={
-          <Button variant="contained" fullWidth>
-            Hola
-          </Button>
-        }
-      />
+        title="Bodega"
+        description="Bienvenido" element={undefined}      />
       <Grid container spacing={2} direction="row">
         {allProducts?.map((el) => (
           <Grid key={el.id} item xs={3}>
-            <CardComponent
+            <HorizontalCardComponent
               id={el.id}
               name={el.name}
               price={el.price}
-              image={el.image} description={""} updated_at={""} slug={""}            />
+              image={el.image} 
+              info={""} />
           </Grid>
         ))}
       </Grid>

@@ -10,6 +10,7 @@ import {
   Stack,
   Toolbar,
   Typography,
+  InputBase
 } from '@mui/material';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { useNavigate } from 'react-router-dom';
@@ -37,7 +38,14 @@ export const NavBar: React.FC<{}> = () => {
               alignItems="center"
             >
               <Grid item>
-                <Typography>Codrr</Typography>
+                <Typography >Bodega</Typography>
+              </Grid>
+              <Grid>
+                <InputBase
+                  sx={{ ml: 1, flex: 1 }}
+                  placeholder="Buscar..."
+                  inputProps={{ 'aria-label': 'Buscar...' }}
+                />
               </Grid>
               <Grid item>
                 <Stack direction="row" spacing={2}>
